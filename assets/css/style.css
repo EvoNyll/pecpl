@@ -4247,7 +4247,6 @@ img {
 
 .services-section-s2 .grid .box:before {
   content: "";
-  background: url("../images/services/service-box-bg.jpg") center center/cover no-repeat local;
   width: 100%;
   height: 100%;
   position: absolute;
