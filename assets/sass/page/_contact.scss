@@ -1,0 +1,120 @@
+/*--------------------------------------------------------------
+	#contact page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#11.1	contact-pg-contact-section
+--------------------------------------------------------------*/
+.contact-pg-contact-section {
+	padding-bottom: 90px;
+
+	@include media-query(991px) {
+		padding-bottom: 80px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 70px;
+	}
+
+	label {
+		color: #242c33;
+
+		@include media-query(767px) {
+			font-size: 13px;
+			font-size: calc-rem-value(13);
+		}
+	}
+
+	.contact-form .row > .col {
+		margin-bottom: 35px;
+
+		@include media-query(767px) {
+			margin-bottom: 18px;
+		}
+	}
+
+	.contact-form .row > .col:nth-child(6) {
+		margin-bottom: 0;
+	}
+
+	.contact-form .row > .col:last-child {
+		margin-bottom: 0;
+	}
+
+	input,
+	textarea {
+		background-color: #ebeef0;
+		height: 38px;
+		border: 0;
+		box-shadow: none;
+		border-radius: 5px;
+
+		@include media-query(767px) {
+			height: 35px;
+		}
+	}
+
+	input:focus,
+	textarea:focus {
+		box-shadow: none;
+	}
+
+	textarea {
+		height: 200px;
+
+		@include media-query(767px) {
+			height: 150px;
+		}
+	}
+
+	.submit-btn button {
+		width: 100%;
+		border: 0;
+		outline: 0;
+		border-radius: 5px;
+	}
+
+	.contact-info {
+
+		@include media-query(767px) {
+			margin-top: 55px;
+		}
+
+		h3 {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+			margin: 0 0 0.47em;
+
+			@include media-query(767px) {
+				font-size: 25px;
+				font-size: calc-rem-value(25);
+			}
+		}
+
+		ul {
+			margin-top: 30px;
+		}
+
+		li {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: #242c33;
+			position: relative;
+			padding-left: 25px;
+		}
+
+		ul > li + li {
+			margin-top: 12px;
+		}
+
+		li i {
+			color: $theme-primary-color;
+			position: absolute;
+			left: 0;
+			top: 4px;
+		}
+	}
+
+	#loader {
+		color: $theme-primary-color;
+	}
+}

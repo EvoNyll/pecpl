@@ -1,0 +1,25 @@
+.form {
+    input,
+    textarea,
+    select {
+        border-radius: 0;
+        outline: 0;
+        box-shadow: none;
+    }
+
+    @include placeholder-style(lighten($black, 35%));
+
+    select {
+        display: inline-block;
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        -ms-appearance:none;
+        appearance:none;
+        cursor:pointer;
+    }
+    
+    select::-ms-expand { /* for IE 11 */
+        display: none;
+    }
+
+}

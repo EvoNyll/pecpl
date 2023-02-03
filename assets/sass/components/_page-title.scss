@@ -1,0 +1,110 @@
+/******************************
+	page title
+******************************/
+.page-title {
+	@include background-style("../images/page-title.jpg", center center, cover, no-repeat, local);
+	height: 415px;
+	position: relative;
+	width: 100%;
+
+
+	@include media-query(991px) {
+		height: 280px;
+	}
+
+	@include media-query(767px) {
+		height: 220px;
+	}
+
+	&:before {
+		content: "";
+		@include overlay(transparentize($theme-secondary-color, 0.3));
+	}
+
+	.container {
+		height: 100%;
+		display: table;
+
+		> .row {
+			vertical-align: middle;
+			display: table-cell;
+		}
+	}
+
+	h2,
+	ol {
+		color: $white;
+	}
+
+	.title-breadcrumb {
+		overflow: hidden;
+		margin: 0 -30px;
+		padding-top: 140px;
+
+		@include media-query(991px) {
+			text-align: center;
+			padding-top: 0;
+		}
+	}
+
+	h2 {
+		font-size: 36px;
+		font-size: calc-rem-value(36);
+		margin: 0;
+
+		@include widther(992px) {
+			display: inline-block;
+			float: left;
+		}
+
+		@include media-query(991px) {
+			font-size: 35px;
+			font-size: calc-rem-value(35);
+			margin: 0 0 0.3em;
+		}
+
+		@include media-query(767px) {
+			font-size: 28px;
+			font-size: calc-rem-value(28);
+		}
+	}
+
+	.breadcrumb {
+		font-family: $heading-font;
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+
+		@include widther(992px) {
+			display: inline-block;
+			float: right;
+			margin-top: 10px;
+		}
+
+		@include media-query(767px) {
+			text-align: center;
+		}
+	}
+
+	.breadcrumb li {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		color: $white;
+		margin-right: 5px;
+	}
+
+	.breadcrumb li a {
+		color: $theme-primary-color;
+	}
+
+	.breadcrumb li a:hover {
+		color: darken($theme-primary-color, 10%);
+	}
+
+	.breadcrumb > li + li:before {
+		font-family: "FontAwesome";
+		content: "\f105";
+		color: $theme-primary-color;
+		margin-right: 5px;
+	}
+}

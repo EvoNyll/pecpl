@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+	#faq page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#6.1	faq-pg-section
+--------------------------------------------------------------*/
+.faq-pg-section {
+
+	.section-title-s4 {
+		margin-bottom: 45px;
+	}
+
+	.section-title-s4 h2 {
+		margin-bottom: 0.4em;
+	}
+
+	.section-title-s4 p span {
+		display: block;
+		color: $black;
+	}
+
+	.section-title-s4 small {
+		color: $theme-primary-color;
+	}
+
+	.faq-section {
+		@include widther(992px) {
+			border: 1px solid #dee0e1;
+			padding: 70px;
+			border-radius: 5px;
+		}
+	}
+}

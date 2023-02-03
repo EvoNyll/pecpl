@@ -1,0 +1,258 @@
+/*--------------------------------------------------------------
+#0.5	footer
+--------------------------------------------------------------*/
+.site-footer {
+	background: #f0f0f0;
+	border-top: 1px solid #dcdcdc;
+
+	.upper-footer {
+		padding: 100px 0;
+
+		@include media-query(991px) {
+			padding: 80px 0 35px;
+		}
+
+		@include media-query(767px) {
+			padding: 70px 0 30px;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		ul,
+		li,
+		p,
+		a {
+			color: #242c33;
+		}
+	}
+
+	.upper-footer .row > .col {
+		@include media-query(991px) {
+			margin-bottom: 55px;
+		}
+
+		@include media-query(767px) {
+			margin-bottom: 50px;
+		}
+	}
+
+	.widget > h3,
+	.widget .footer-logo {
+		font-size: 24px;
+		font-size: cacl-rem-value(24);
+		color: #242c33;
+		text-transform: uppercase;
+		margin: 0 0 2em;
+		position: relative;
+
+		@include media-query(991px) {
+			font-size: 20px;
+			font-size: cacl-rem-value(20);
+		}
+
+		@include media-query(767px) {
+			font-size: 16px;
+			font-size: cacl-rem-value(16);
+		}
+	}
+
+	/*** about widget ***/
+	.about-widget {
+		@include widther(1200px) {
+			padding-right: 20px;
+		}
+
+		p {
+			margin-top: -25px;
+
+			@include media-query(767px) {
+				margin-top: 0;
+			}
+		}
+
+		ul {
+			overflow: hidden;
+			margin-top: 45px;
+
+			@include media-query(991px) {
+				margin-top: 25px;
+			}
+
+			li {
+				float: left;
+			}
+
+			> li + li {
+				margin-left: 20px;
+
+				@include media-query(991px) {
+					margin-left: 15px;
+				}
+			}
+
+			a {
+				font-size: 18px;
+				font-size: calc-rem-value(18);
+
+				@include media-query(991px) {
+					font-size: 16px;
+					font-size: calc-rem-value(16);
+				}
+			}
+
+			a:hover {
+				color: $theme-primary-color;
+			}
+		}
+	}
+
+
+	/*** services-widget ***/
+	.services-widget {
+		overflow: hidden;
+
+		@include widther(1200px) {
+			padding-right: 45px;
+		}
+
+		a {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+
+			@include media-query(767px) {
+				font-size: 15px;
+				font-size: calc-rem-value(15);
+			}
+		}
+
+		a:hover {
+			color: $theme-primary-color;
+		}
+
+		i {
+			display: inline-block;
+			padding-right: 5px;
+		}
+	}
+
+	.services-widget ul li + li {
+		margin-top: 23px;
+
+		@include media-query(767px) {
+			margin-top: 10px;
+		}
+	}
+
+
+	/*** twitter-feed-widget ***/
+	.twitter-feed-widget ul li + li {
+		padding-top: 14px;
+		margin-top: 14px;
+		border-top: 1px solid #dcdcdc;
+	}
+
+	.twitter-feed-widget p {
+		color: #989fa7;
+		padding-right: 25px;
+	}
+
+	.twitter-feed-widget i {
+		color: #198cfa;
+		display: inline-block;
+		padding-right: 5px;
+	}
+
+	.twitter-feed-widget .info-box a {
+		font-size: 14px;
+		font-size: calc-rem-value(14);
+		color: $theme-primary-color;
+
+		@include media-query(991px) {
+			font-weight: normal;
+		}
+	}
+
+
+	/*** recent-post-widget ***/
+	.recent-post-widget {
+
+		ul > li + li {
+			margin-top: 40px;
+		}
+
+		li {
+			padding-left: 88px;
+			position: relative;
+		}
+
+		.entry-media {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		.entry-details h4 {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			font-weight: 500 !important;
+			color: #242c33;
+			line-height: 1.5em;
+			font-weight: normal;
+			margin: 0;
+			position: relative;
+			top: -5px;
+
+			@include media-query(1199px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+			}
+
+			a {
+				color: #242c33;
+			}
+
+			a:hover {
+				color: $theme-primary-color;
+			}
+		}
+
+		.entry-details .date {
+			font-size: 16px;
+			font-size: calc-rem-value(16);
+			color: #7a8595;
+			font-weight: 500;
+
+			@include media-query(1199px) {
+				font-size: 14px;
+				font-size: calc-rem-value(14);
+			}
+		}
+	}
+
+	/*** copyright-info ***/
+	.copyright-info {
+		padding: 13px 0;
+		text-align: center;
+		border-top: 1px solid #dcdcdc;
+
+		p {
+			color: #989fa7;
+			margin: 0;
+
+			@include media-query(767px) {
+				font-size: 13px;
+				font-size: cacl-rem-value(13);
+			}
+		}
+
+		a {
+			color: #989fa7;
+		}
+
+		a:hover {
+			color: $theme-primary-color;
+		}
+	}
+}
