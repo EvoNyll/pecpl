@@ -4183,7 +4183,7 @@ img {
 #2.2	services-section-s2
 --------------------------------------------------------------*/
 .services-section-s2 {
-  background-color: #edf5f8;
+  background-color: rgb(217,58,84, 0.08);
   padding-bottom: 90px;
 }
 
