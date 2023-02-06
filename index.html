@@ -25,6 +25,7 @@
     <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/css/vegas/vegas.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -51,7 +52,7 @@
         <!-- end preloader -->
 
         <!-- Start header -->
-        <header id="header" class="site-header header-style-3">
+        <header id="header" class="site-header header-style-1">
             <div class="topbar">
                 <div class="container">
                     <div class="row">
@@ -134,43 +135,22 @@
         </header>
         <!-- end of header -->
 
-
-        <!-- start of hero -->   
-        <section class="hero hero-slider-wrapper hero-style-3">
-            <div class="hero-slider">
-                <div class="slide">
-                    <video class="slider-overlay" autoplay muted loop>
-                        <source src="assets/videos/video-1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="row">
-                        <div class="col col-lg-6 col-lg-offset-3 col-sm-10 col-sm-offset-1 slide-caption">
-                            <h2><span>Project Engineering & Controls</span>Pvt. Ltd</h2>
-                            <p>An ISO 9001: 2008 Certified Company</p>
-                            <div class="btns">
-                                <a href="#" class="theme-btn">Our Industries</a>
+        <!-- start of video slideshow -->  
+        <div class="ln-fullpage" data-navigation="true">
+            <section class="layout-wide slideshow-video-background">
+                <div class="ln-section d-flex min-vh-100" data-anchor="home" data-tooltip="Home">
+                    <div class="container align-self-center text-white">
+                        <div class="row">
+                            <div class="col-12 col-lg-9 col-xl-6">
+                                <h3 class="mb-7" data-animation="fadeInUp" data-animation-delay="200">WE ARE <span>PECPL</span> </h3>
+                                <a href="#" class="btn mr-3" data-animation="fadeInUp" data-animation-delay="400">Learn more</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="slide">
-                    <video class="slider-overlay" autoplay muted loop>
-                        <source src="assets/videos/video-2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
-                <div class="slide">
-                    <video class="slider-overlay" autoplay muted loop>
-                        <source src="assets/videos/video-3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </section>
-        <!-- end of hero slider -->
-
+            </section>
+        </div>
+        <!-- end of video slideshow -->
 
         <!-- start about-section-s3 -->
         <section class="about-section-s3 section-padding">
@@ -565,8 +545,9 @@
     ================================================== -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vegas/vegas.min.js"></script>
 
-    <!-- Plugins for this template -->
+    <!-- Plugins for this design -->
     <script src="assets/js/jquery-plugin-collection.js"></script>
 
     <!-- Google map api -->
@@ -574,5 +555,50 @@
 
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
+
+    <!-- Video Slideshow -->
+    <script>
+    if ($('section').hasClass('slideshow-video-background')) {
+      $('section.slideshow-video-background').vegas({
+        preload: true,
+        timer: false,
+        delay: 5000,
+        transition: 'fade',
+        transitionDuration: 1000,
+        firstTransition: 'none',
+        slides: [
+          {
+            video: {
+              src: [
+                'assets/videos/video-1.mp4'
+              ],
+              loop: false,
+              mute: true
+            }
+          },
+          {
+            video: {
+              src: [
+                'assets/videos/video-2.mp4'
+              ],
+              loop: false,
+              mute: true
+            }
+          },
+          {
+            video: {
+              src: [
+                'assets/videos/video-3.mp4'
+              ],
+              loop: false,
+              mute: true
+            }
+          },
+        ],
+        overlay: 'assets/images/bg.png'
+      });
+    }
+    </script>
+
 </body>
 </html>
