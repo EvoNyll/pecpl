@@ -745,7 +745,8 @@
     $.vegas.defaults = defaults;
 
     $.vegas.isVideoCompatible = function () {
-        return !/(Android|webOS|Phone|iPad|iPod|BlackBerry|Windows Phone)/i.test(navigator.userAgent);
+        var devices = /(Android|webOS|Phone|iPad|iPod|BlackBerry|Windows Phone)/i;
+        return !devices.test(navigator.userAgent);
     };
 
 })(window.jQuery || window.Zepto);

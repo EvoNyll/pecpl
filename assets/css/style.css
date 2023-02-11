@@ -4807,6 +4807,17 @@ img {
   margin-top: 90px;
 }
 
+.work-process-section .work-process-content .tab-content .detail-box h3 {
+  color: #4b4e53;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.work-process-section .work-process-content .tab-content .detail-box ul {
+  padding-bottom: 20px;
+}
+
 @media (max-width: 991px) {
   .work-process-section .work-process-content {
     margin-top: 45px;
@@ -4914,7 +4925,6 @@ img {
 }
 
 .work-process-section .tab-pane .details {
-  width: calc(100% - 300px);
   float: left;
   padding-left: 28px;
 }
@@ -4923,7 +4933,6 @@ img {
   .work-process-section .tab-pane .details {
     width: 100%;
     float: none;
-    padding-left: 0;
     padding-top: 45px;
   }
 }
@@ -7318,6 +7327,14 @@ img {
   .fes1-img-cont img{
 		height:250px;
 	}
+  .big-title {
+		font-size: 40px !important;
+		line-height: 40px !important;
+	}
+  .title-fs-60 {
+		font-size: 40px !important;
+		line-height: 40px !important;
+	}
 }
 
 .mb-20 {margin-bottom:20px !important;}
@@ -7339,6 +7356,14 @@ img {
 }
 
 .title-fs-60 {
+	color:#4b4e53;
+	font-family: 'Lato',Arial,Helvetica,sans-serif;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 300;
+}
+
+.big-title {
 	color:#4b4e53;
 	font-family: 'Lato',Arial,Helvetica,sans-serif;
 	font-size: 60px;
