@@ -12,6 +12,7 @@
 
     <!-- Icon fonts -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/images/pecplfavicon.ico" rel="image/x-icon">
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -448,45 +449,53 @@
 
     <!-- Video Slideshow -->
     <script>
-    if ($('section').hasClass('slideshow-video-background')) {
-      $('section.slideshow-video-background').vegas({
-        preload: true,
-        timer: false,
-        delay: 5000,
-        transition: 'fade',
-        transitionDuration: 1000,
-        firstTransition: 'none',
-        slides: [
-          {
-            video: {
-              src: [
-                'assets/videos/video-1.mp4'
-              ],
-              loop: false,
-              mute: true
-            }
-          },
-          {
-            video: {
-              src: [
-                'assets/videos/video-2.mp4'
-              ],
-              loop: false,
-              mute: true
-            }
-          },
-          {
-            video: {
-              src: [
-                'assets/videos/video-3.mp4'
-              ],
-              loop: false,
-              mute: true
-            }
-          },
-        ],
-        overlay: 'assets/images/bg.png'
-      });
+    if ($('section').vegas().isVideoCompatible()) {
+        if ($('section').hasClass('slideshow-video-background')) {
+            $('section.slideshow-video-background').vegas({
+                preload: true,
+                timer: false,
+                delay: 5000,
+                transition: 'fade',
+                transitionDuration: 1000,
+                firstTransition: 'none',
+                slides: [
+                { src: 'assets/images/slider-1.jpg',
+                    video: {
+                    src: [
+                        'assets/videos/video-1.mp4',
+                        'assets/videos/video-1.webm',
+                        'assets/videos/video-1.ogv'
+                    ],
+                    loop: false,
+                    mute: true
+                    }
+                },
+                { src: 'assets/images/slider-2.jpg',
+                    video: {
+                    src: [
+                        'assets/videos/video-2.mp4',
+                        'assets/videos/video-2.webm',
+                        'assets/videos/video-2.ogv'
+                    ],
+                    loop: false,
+                    mute: true
+                    }
+                },
+                { src: 'assets/images/slider-3.jpg',
+                    video: {
+                    src: [
+                        'assets/videos/video-3.mp4',
+                        'assets/videos/video-3.webm',
+                        'assets/videos/video-3.ogv'
+                    ],
+                    loop: false,
+                    mute: true
+                    }
+                },
+                ],
+                    overlay: 'assets/images/bg.png'
+            });
+        }
     }
     </script>
 
