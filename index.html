@@ -12,7 +12,7 @@
 
     <!-- Icon fonts -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/images/pecplfavicon.ico" rel="image/x-icon">
+    <link href="assets/images/pecplfavicon.ico" rel="icon">
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/magnific-popup.css" rel="stylesheet">
     <link href="assets/vendor/vegas/vegas.css" rel="stylesheet">
-
+ 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -121,12 +121,7 @@
                             </li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="careers.html">Careers</a></li>
-                            <li class="menu-item-has-children">
-                                <a href="#">Media</a>
-                                <ul class="sub-menu">
-                                    <li><a href="media-room.html">Media Room</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="media-room.html">Media</a></li>
                             <li><a href="inquiry.html">Inquiry</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -137,19 +132,79 @@
         <!-- end of header -->
 
         <!-- start of video slideshow -->  
-        <div class="ln-fullpage" data-navigation="true">
-            <section class="layout-wide slideshow-video-background">
-                <div class="ln-section d-flex min-vh-100" data-anchor="home" data-tooltip="Home">
-                    <div class="container align-self-center text-white">
-                        <div class="row">
-                            <div class="col-12 col-lg-9 col-xl-6">
-                                <h3 class="mb-7" data-animation="fadeInUp" data-animation-delay="200">WE ARE <span>PECPL</span> </h3>
-                                <a href="overview.html" class="btn mr-3" data-animation="fadeInUp" data-animation-delay="400">Learn more</a>
+        <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+                <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+            </ol>
+
+            <!-- Inner -->
+            <div class="carousel-inner">
+                <!-- Single item -->
+                <div class="carousel-item active">
+                    <video style="width: 100% !important; height: auto !important;" playsinline autoplay muted loop>
+                        <source class="w-100 h-100" src="assets/videos/video-1.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="mask">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="text-white text-center">
+                                <h1 class="mb-3">We are PECPL</h1>
+                                <h5 class="mb-4">
+                                    Certified Professionals
+                                </h5>
+                                <a class="btn btn-outline-light btn-lg m-2" href="overview.html" role="button">
+                                    Learn More
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <video style="width: 100% !important; height: auto !important;" playsinline autoplay muted loop>
+                        <source class="w-100 h-100" src="assets/videos/video-2.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="mask">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="text-white text-center">
+                                <h1 class="mb-3">We are PECPL</h1>
+                                <h5 class="mb-4">
+                                    Multidisciplinary Company
+                                </h5>
+                                <a class="btn btn-outline-light btn-lg m-2" href="overview.html" role="button">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single item -->
+                <div class="carousel-item">
+                    <video style="width: 100% !important; height: auto !important;" playsinline autoplay muted loop>
+                        <source class="w-100 h-100" src="assets/videos/video-3.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="mask">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="text-white text-center">
+                                <h1 class="mb-3">We are PECPL</h1>
+                                <h5 class="mb-4">
+                                    World Class Services
+                                </h5>
+                                <a class="btn btn-outline-light btn-lg m-2" href="overview.html" role="button">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Inner -->
+        
         </div>
         <!-- end of video slideshow -->
 
@@ -263,9 +318,8 @@
                                         <div class="icon"><img src="assets/images/services/icon-1.png" alt></div>
                                         <h3>Detailed land Survey</h3>
                                     </div>
-                                    <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia..</p>
                                     <div class="more">
-                                        <a href="#">Read More</a>
+                                        <a href="topographic-and-contour-survey.html">Read More</a>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -273,9 +327,8 @@
                                         <div class="icon"><img src="assets/images/services/icon-2.png" alt></div>
                                         <h3>Transmission Line Survey & Tower spotting</h3>
                                     </div>
-                                    <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia..</p>
                                     <div class="more">
-                                        <a href="#">Read More</a>
+                                        <a href="topographic-and-contour-survey.html">Read More</a>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -283,9 +336,8 @@
                                         <div class="icon"><img src="assets/images/services/icon-3.png" alt></div>
                                         <h3>Geo-technical Investigation</h3>
                                     </div>
-                                    <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia..</p>
                                     <div class="more">
-                                        <a href="#">Read More</a>
+                                        <a href="geotechnical-investigation.html">Read More</a>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -293,9 +345,8 @@
                                         <div class="icon"><img src="assets/images/services/icon-4.png" alt></div>
                                         <h3>Soil Investigation</h3>
                                     </div>
-                                    <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia..</p>
                                     <div class="more">
-                                        <a href="#">Read More</a>
+                                        <a href="subsurface-environmental-sampling.html">Read More</a>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -303,9 +354,8 @@
                                         <div class="icon"><img src="assets/images/services/icon-5.png" alt></div>
                                         <h3>Hydro-geological Investigation & Pump out Test</h3>
                                     </div>
-                                    <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia..</p>
                                     <div class="more">
-                                        <a href="#">Read More</a>
+                                        <a href="geophysical-and-hydrogeological.html">Read More</a>
                                     </div>
                                 </div>
                                 <div class="box">
@@ -313,9 +363,8 @@
                                         <div class="icon"><img src="assets/images/services/icon-6.png" alt></div>
                                         <h3>Mineral Exploration</h3>
                                     </div>
-                                    <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia..</p>
                                     <div class="more">
-                                        <a href="#">Read More</a>
+                                        <a href="mining-and-geology.html">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -325,9 +374,8 @@
                                         <div class="icon"><img src="assets/images/services/icon-7.png" alt></div>
                                         <h3>Geo-Physical Exploration</h3>
                                     </div>
-                                    <p>Excepteur sint occaecat cupidatat non proi dent, sunt in culpa qui officia..</p>
                                     <div class="more">
-                                        <a href="#">Read More</a>
+                                        <a href="geophysical-and-hydrogeological.html">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -397,7 +445,7 @@
                                     <li><a href="geotechnical-investigation.html"><i class="fa fa-angle-right"></i> Geotechnical Investigation</a></li>
                                     <li><a href="mining-and-geology.html"><i class="fa fa-angle-right"></i> Mining & Geology</a></li>
                                     <li><a href="topographic-and-contour-survey.html"><i class="fa fa-angle-right"></i> Topographic & Contour Survey</a></li>
-                                    <li><a href="geo-physical-and-hydrogeological.html"><i class="fa fa-angle-right"></i> Geo-physical & Hydrogeological</a></li>
+                                    <li><a href="geophysical-and-hydrogeological.html"><i class="fa fa-angle-right"></i> Geo-physical & Hydrogeological</a></li>
                                     <li><a href="subsurface-environmental-sampling.html"><i class="fa fa-angle-right"></i> Subsurface Environmental Sampling</a></li>
                                 </ul>
                             </div>
@@ -414,7 +462,7 @@
                                 
                             </div>
                             <div class="btns">
-                                <a href="contact.html" class="theme-btn">Send us a message</a>
+                                <a href="inquiry.html" class="theme-btn">Send us a message</a>
                             </div>
                         </div>
                     </div>
@@ -444,60 +492,12 @@
     <!-- Google map api -->
     <script src="https://maps.googleapis.com/maps/api/js?key"></script>
 
+    <!-- Video Slideshow -->
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+
     <!-- Custom script -->
     <script src="assets/js/script.js"></script>
 
-    <!-- Video Slideshow -->
-    <script>
-    if ($.vegas.isVideoCompatible()) {
-        if ($('section').hasClass('slideshow-video-background')) {
-            $('section.slideshow-video-background').vegas({
-                preload: true,
-                timer: false,
-                delay: 5000,
-                transition: 'fade',
-                transitionDuration: 1000,
-                firstTransition: 'none',
-                slides: [
-                { src: 'assets/images/slider-1.jpg',
-                    video: {
-                    src: [
-                        'assets/videos/video-1.mp4',
-                        'assets/videos/video-1.webm',
-                        'assets/videos/video-1.ogv'
-                    ],
-                    loop: false,
-                    mute: true
-                    }
-                },
-                { src: 'assets/images/slider-2.jpg',
-                    video: {
-                    src: [
-                        'assets/videos/video-2.mp4',
-                        'assets/videos/video-2.webm',
-                        'assets/videos/video-2.ogv'
-                    ],
-                    loop: false,
-                    mute: true
-                    }
-                },
-                { src: 'assets/images/slider-3.jpg',
-                    video: {
-                    src: [
-                        'assets/videos/video-3.mp4',
-                        'assets/videos/video-3.webm',
-                        'assets/videos/video-3.ogv'
-                    ],
-                    loop: false,
-                    mute: true
-                    }
-                },
-                ],
-                    overlay: 'assets/images/bg.png'
-            });
-        }
-    }
-    </script>
 
 </body>
 </html>
