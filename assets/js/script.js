@@ -698,7 +698,37 @@
         $(".js-height-fullscr").height($(window).height());
         })(jQuery);
     } 
+    
+    
+    /*==========================================================================
+        FILE UPLOAD
+    ==========================================================================*/
+    FilePond.registerPlugin(
+		FilePondPluginFileValidateSize,
+		FilePondPluginFileValidateType
+	);
 
+	FilePond.setOptions({
+
+		maxFiles: 1,
+
+		maxFileSize: '1MB',
+
+		acceptedFileTypes: ['image/png', 'image/jpeg', 'application/pdf'],
+
+		server: 'php/'
+	});
+
+	FilePond.create(document.querySelector('input[type="file"]'));
+    
+    /*==========================================================================
+        FORM INPUT VALIDATION
+    ==========================================================================*/
+    $('#contactForm').parsley();
+
+	$('#contactForm').parsley().on('field:success', function() { 
+		$('ul.parsley-errors-list').not(':has(li)').remove();
+	});
 
 
 })(window.jQuery);

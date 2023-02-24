@@ -2688,6 +2688,7 @@ img {
 --------------------------------------------------------------*/
 .about-section {
   background: url("../images/about-section-bg.jpg") center center/cover no-repeat local;
+  background-attachment: fixed;
 }
 
 .about-section .content {
