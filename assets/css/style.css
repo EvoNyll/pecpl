@@ -3378,6 +3378,7 @@ img {
 
 .about-section-s2 .video-holder {
   padding: 22px 30px;
+  background-attachment: fixed;
 }
 
 .about-section-s2 .video-holder a {
