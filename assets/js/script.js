@@ -588,12 +588,7 @@
     if ($("#contact-form-s2").length) {
         $("#contact-form-s2").validate({
             rules: {
-                f_name: {
-                    required: true,
-                    minlength: 2
-                },
-
-                l_name: {
+                name: {
                     required: true,
                     minlength: 2
                 },
@@ -605,8 +600,7 @@
             },
 
             messages: {
-                f_name: "Please enter your First name",
-                l_name: "Please enter your Last name",
+                name: "Please enter your full name",
                 email: "Please enter your email",
                 phone: "Please enter your phone",
             },

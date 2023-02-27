@@ -1,10 +1,6 @@
-/*---------------------------
-	Fonts
-----------------------------*/
+
 @import url("https://fonts.googleapis.com/css?family=Heebo:400,500,700|Lato:400,400i,700");
-/*--------------------------------------------------------------
-    Theme Reset Style
---------------------------------------------------------------*/
+
 html {
   font-size: 15px;
 }
@@ -63,9 +59,6 @@ img {
   max-width: 100%;
 }
 
-/*--------------------------------------------------------------
-    Global Elements
---------------------------------------------------------------*/
 .page-wrapper {
   position: relative;
   overflow: hidden;
@@ -110,7 +103,6 @@ img {
 .row:after, .clearfix:after { clear: both; }
 .row, .clearfix { zoom: 1; }
 
-/*** contact form error handling ***/
 .contact-validation-active .error-handling-messages {
   width: 100%;
   margin-top: 15px;
@@ -172,7 +164,6 @@ img {
   font-size: 0.53333rem;
 }
 
-/*** back to top **/
 .back-to-top {
   background-color: rgb(173,58,110);
   width: 45px;
@@ -1276,9 +1267,6 @@ img {
   }
 }
 
-/*--------------------------------------------------------------
-	header
---------------------------------------------------------------*/
 .site-header {
   /* navigation open and close btn hide for width screen */
   /* style for navigation less than 992px */
@@ -1302,6 +1290,11 @@ img {
 
 .site-header .navigation .navbar-brand {
   height: auto;
+}
+
+.site-header .navigation .navbar-brand img {
+  width: 220px;
+  height: 60px;
 }
 
 @media (max-width: 1201px) {
@@ -1765,9 +1758,6 @@ img {
   top: 22px;
 }
 
-/*--------------------------------------------------------------
-	slideshow-video
---------------------------------------------------------------*/
 .d-flex {
   display: flex !important;
 }
@@ -2047,17 +2037,9 @@ img {
 }
 
 
-/*--------------------------------------------------------------
-	footer
---------------------------------------------------------------*/
 .site-footer {
   background: #f0f0f0;
   border-top: 1px solid #dcdcdc;
-  /*** about widget ***/
-  /*** services-widget ***/
-  /*** twitter-feed-widget ***/
-  /*** recent-post-widget ***/
-  /*** copyright-info ***/
 }
 
 .site-footer .upper-footer {
@@ -2369,11 +2351,7 @@ img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/*--------------------------------------------------------------
-	cta-section
---------------------------------------------------------------*/
 .cta-section, .cta-section-s2 {
-  /*background: url("../images/cta-bg.jpg") center center/cover no-repeat local;*/
   padding: 55px 0;
   position: relative;
 }
@@ -2442,9 +2420,6 @@ img {
   }
 }
 
-/*--------------------------------------------------------------
-	services-section
---------------------------------------------------------------*/
 .services-section {
   background-color: #edf5f8;
   padding-bottom: 90px;
@@ -2683,9 +2658,6 @@ img {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-	about-section
---------------------------------------------------------------*/
 .about-section {
   background: url("../images/about-section-bg.jpg") center center/cover no-repeat local;
   background-attachment: fixed;
@@ -2881,9 +2853,6 @@ img {
   margin-right: 10px;
 }
 
-/*--------------------------------------------------------------
-	projects-section
---------------------------------------------------------------*/
 .projects-section, .projects-section-s2 {
   padding-bottom: 90px;
 }
@@ -3100,9 +3069,6 @@ img {
 }
 
 
-/*--------------------------------------------------------------
-	contact-section
---------------------------------------------------------------*/
 .contact-section {
   background: url("../images/contact-section-bg.jpg") center center/cover no-repeat local;
   position: relative;
@@ -3309,9 +3275,6 @@ img {
   height: 755px;
 }
 
-/*--------------------------------------------------------------
-	about-section
---------------------------------------------------------------*/
 .about-section-s2 > .container {
   position: relative;
 }
@@ -3446,9 +3409,6 @@ img {
   margin-right: 10px;
 }
 
-/*--------------------------------------------------------------
-	services-section
---------------------------------------------------------------*/
 .services-section-s2 {
   background-color: rgb(217,58,84, 0.08);
   padding-bottom: 90px;
@@ -3703,9 +3663,6 @@ img {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-	features-section
---------------------------------------------------------------*/
 .features-section .features-grids {
   overflow: hidden;
 }
@@ -3785,10 +3742,6 @@ img {
   margin: 0;
 }
 
-
-/*--------------------------------------------------------------
-	fun-fact-section
---------------------------------------------------------------*/
 .fun-fact-section {
   padding: 70px 0 80px;
   border-bottom: 1px solid #dedede;
@@ -3915,11 +3868,6 @@ img {
   }
 }
 
-
-
-/*--------------------------------------------------------------
-	about-section
---------------------------------------------------------------*/
 .about-section-s3 .about-text {
   padding: 40px 0;
   margin-left: -30px;
@@ -4143,9 +4091,6 @@ img {
   }
 }
 
-/*--------------------------------------------------------------
-	work-process-section
---------------------------------------------------------------*/
 .work-process-section {
   /*** tablinks ***/
   /*** tab-content ***/
@@ -4378,9 +4323,6 @@ img {
   }
 }
 
-/*--------------------------------------------------------------
- projects-section-s2
---------------------------------------------------------------*/
 .projects-section-s2 {
   position: relative;
 }
@@ -4395,10 +4337,6 @@ img {
   top: 0;
 }
 
-
-/*--------------------------------------------------------------
-	cta-section-s2
---------------------------------------------------------------*/
 .cta-section-s2:before {
   background: rgba(13, 30, 45, 0.9);
 }
@@ -4407,10 +4345,6 @@ img {
   color: #fff;
 }
 
-
-/*--------------------------------------------------------------
-	all-projects-section
---------------------------------------------------------------*/
 .all-projects-section {
   padding-bottom: 90px;
 }
@@ -4626,13 +4560,6 @@ img {
   color: #ad3a6e;
 }
 
-
-/*--------------------------------------------------------------
-	#contact page
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-#11.1	contact-pg-contact-section
---------------------------------------------------------------*/
 .contact-pg-contact-section {
   padding-bottom: 90px;
 }
@@ -4647,6 +4574,18 @@ img {
   .contact-pg-contact-section {
     padding-bottom: 70px;
   }
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .contact-pg-contact-section label {
@@ -4775,11 +4714,6 @@ img {
   color: #ad3a6e;
 }
 
-
-
-/*--------------------------------------------------------------
-#1.6	overview-section
---------------------------------------------------------------*/
 .page-section  {
   width: 100%;
   display: block;
@@ -4853,6 +4787,7 @@ img {
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 300;
+  text-transform: uppercase;
 }
 
 .big-title {
@@ -4879,9 +4814,6 @@ img {
   text-transform: uppercase;
 }
 
-/*--------------------------------------------------------------
-#	404-section
---------------------------------------------------------------*/
 .p-140-cont{ 
   padding-top:140px; 
   padding-bottom:140px;

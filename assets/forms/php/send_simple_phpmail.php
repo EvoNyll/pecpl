@@ -9,27 +9,21 @@
 	<meta name="author" content="UWS">
 	<title>PECPL | Career Form</title>
 
-	<!-- Favicon -->
 	<link href="../img/favicon.png" rel="shortcut icon">
 
-	<!-- Google Fonts - Poppins, Karla -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Karla:300,400,500,600,700" rel="stylesheet">
 
-	<!-- Font Awesome CSS -->
 	<link href="../vendor/fontawesome/css/all.min.css" rel="stylesheet">
 
-	<!-- Custom Font Icons -->
 	<link href="../vendor/icomoon/css/iconfont.min.css" rel="stylesheet">
 
-	<!-- Vendor CSS -->
 	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../vendor/dmenu/css/menu.css" rel="stylesheet">
 	<link href="../vendor/hamburgers/css/hamburgers.min.css" rel="stylesheet">
 	<link href="../vendor/mmenu/css/mmenu.min.css" rel="stylesheet">
 	<link href="../vendor/filepond/css/filepond.css" rel="stylesheet">
 
-	<!-- Main CSS -->
 	<link href="../css/style.css" rel="stylesheet">
 
 </head>
@@ -38,8 +32,6 @@
 
 <?php
 
-/* Validate User Inputs
-==================================== */
 
 // Name 
 if ($_POST['username'] != '') {
@@ -89,8 +81,6 @@ if ($_POST['phone'] != '') {
 	}
 }
 
-/* Validate Hidden Inputs
-==================================== */
 
 function sanitizePostTitle($postName, $invalidMessage) {
 	
@@ -112,8 +102,6 @@ $errors .= sanitizePostTitle('subject', 'Please set a valid Subject.');
 // Continue if NO errors found after validation
 if (!$errors) {	
 
-	/* Explore the uploaded file
-	==================================== */
 
 	$tmp_dirs = [];
 	$attachment_ids = $_POST['filepond'];
@@ -125,10 +113,8 @@ if (!$errors) {
 
 	}
 
-	/* Mail Sending
-	==================================== */
 
-    $to = "ihopenone@gmail.com"; // Your email goes here
+    $to = "admin@pecpl.tech"; 
 	$subject = "Message";
 	$headers = "From: PECPL Tech <admin@pecpl.tech>";
 	$message = "MESSAGE ARRIVED VIA PECPL TECH WITH FOLLOWING DETAILS" . "\n";
@@ -185,7 +171,6 @@ if (!$errors) {
 }
 
 ?>
-<!-- END PHP -->
 
 </body>
 </html>
